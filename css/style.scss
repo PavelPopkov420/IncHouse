@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 calc((100vw - 1100px) / 2);
+}
+.header {
+  height: 100px;
+  background-color: #e1ede6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    width: 143px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 470px;
+    height: 24px;
+    top: 38px;
+    left: 805px;
+    gap: 60px;
+  }
+  &__link {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #2c2d35;
+  }
+}
+.logo-text {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #598d66;
+}
+.inkHouse {
+  color: #598d66;
+}
+.main {
+  &__box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+
+  &__content {
+    width: 540px;
+    height: 331px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__title {
+    width: 540px;
+    height: 132px;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    color: #2c2d35;
+  }
+  &__subtitle {
+    width: 540px;
+    height: 54px;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #86928b;
+  }
+  &__btn {
+    margin-top: 60px;
+    width: 225px;
+    height: 65px;
+    background: transparent;
+    border: 1px solid #598d66;
+    color: #598d66;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+}
+
+.catalog {
+  margin-top: 100px;
+  height: 44px;
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+  }
+  &__navigation {
+    width: 428px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    width: 126px;
+    background-color: #d4e8d9;
+    border: none;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border-radius: 50px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #376b44;
+      color: #f4f6f5;
+    }
+  }
+
+  &__cards {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__card {
+    padding: 20px;
+    width: 350px;
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #e1ede6;
+    &-img {
+      width: 310px;
+      height: 422px;
+    }
+    &-author {
+      font-family: Raleway;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0%;
+    }
+    &-title {
+      font-family: Raleway;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0%;
+    }
+    &-subtitle {
+      font-family: Raleway;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0%;
+    }
+    &-price {
+      font-family: Raleway;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: #598d66;
+    }
+    &-btn {
+      width: 310px;
+      height: 65px;
+      background: transparent;
+      border: 1px solid #598d66;
+      color: #598d66;
+      font-family: Raleway;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      cursor: pointer;
+    }
+  }
+
+  .promo {
+    width: 600px;
+    height: 300px;
+    background-image: url("/image/Rectangle.jpg");
+  }
+}
