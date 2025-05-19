@@ -529,7 +529,7 @@ a {
 
 // медиа запросы
 
-@media (min-width: 550px) and (max-width: 1092px) {
+@media (max-width: 1440px) {
   .container {
     max-width: 768px;
     width: 100%;
@@ -616,6 +616,13 @@ a {
   }
 
   .promo {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7) 10%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0.1) 100%
+      ),
+      url("/image/Rectangle.jpg") no-repeat center / cover;
     &__info {
       max-width: 690px;
       width: 100%;
@@ -702,7 +709,7 @@ a {
   }
 }
 
-@media (min-width: 576px) and (max-width: 680px) {
+@media (max-width: 768px) {
   .container {
     max-width: 510px;
     width: 100%;
@@ -740,6 +747,11 @@ a {
       height: 239px;
       gap: 30px;
     }
+    &_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
     &-img {
       max-width: 195px;
       width: 100%;
@@ -750,18 +762,16 @@ a {
     &__title {
       max-width: 510px;
       width: 100%;
-      height: 239px;
+
       font-size: 36px;
     }
     &__subtitle {
       max-width: 285px;
       width: 100%;
-      height: 96px;
 
       font-size: 16px;
     }
     &__btn {
-      margin-top: 1px;
       width: 178px;
       height: 50px;
       font-size: 18px;
@@ -822,6 +832,7 @@ a {
       width: 100%;
       height: 50px;
       font-size: 24px;
+
       &-img {
         width: 50px;
         height: 50px;
@@ -830,20 +841,30 @@ a {
     &__content {
       font-size: 16px;
       &-btn {
-        width: 190px;
-        height: 50px;
-        font-size: 18px;
+        width: 190;
+        height: 50;
+        top: 310px;
+        left: 33px;
+        gap: 6px;
+        padding-top: 20px;
+        padding-right: 60px;
+        padding-bottom: 20px;
+        padding-left: 60px;
       }
     }
   }
 
   .team {
+    margin-top: 50px;
+    height: 656px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
     gap: 30px;
     &__img {
-      max-width: 375;
+      max-width: 375px;
       width: 100%;
-      max-height: 370;
-      height: 100%;
+      height: 370px;
     }
     &__content {
       &-title {
@@ -857,54 +878,64 @@ a {
 
   .footer {
     height: 319px;
+
     &__box {
-      height: 100%;
-      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      height: 250px;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 30px;
+    }
+
+    &__contact {
+      max-width: 510px;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__number {
+      margin-top: 0;
     }
     &__content {
       max-width: 510px;
       width: 100%;
+      height: 50px;
+      height: 113px;
       justify-content: space-between;
+      border-bottom: 1px solid #c3d1c6;
+      padding-bottom: 16px;
     }
     &__social {
-      margin-top: 16px;
-      height: 87px;
-      border-top: 1px solid #c3d1c6;
-      gap: 10px;
-      justify-content: center;
-      align-items: center;
-      max-width: 510px;
-      &-media {
-        &-copyright {
-          display: flex;
-          flex-direction: row;
-        }
-      }
+      display: flex;
+      flex-direction: column;
     }
   }
 }
 
-@media (max-width: 575px) {
-  .container {
-    max-width: 290px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .header {
-    background-color: #ffffff;
-    &__box {
-      align-items: start;
-    }
-    &__logo {
-      display: flex;
-      justify-content: center;
-      max-width: 390px;
-      width: 100%;
-      height: 68px;
-      background-color: #ffffff;
-    }
-    &__nav {
-      display: none;
-    }
-  }
-}
+// @media (max-width: 576px) {
+//   .container {
+//     max-width: 290px;
+//     width: 100%;
+//     margin: 0 auto;
+//   }
+//   .header {
+//     background-color: #ffffff;
+//     &__box {
+//       align-items: start;
+//     }
+//     &__logo {
+//       display: flex;
+//       justify-content: center;
+//       max-width: 390px;
+//       width: 100%;
+//       height: 68px;
+//       background-color: #ffffff;
+//     }
+//     &__nav {
+//       display: none;
+//     }
+//   }
+// }
