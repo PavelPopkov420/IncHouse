@@ -529,32 +529,24 @@ a {
 
 // медиа запросы
 
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
   .container {
-    max-width: 768px;
+    max-width: 1278px;
     width: 100%;
     margin: 0 auto;
-  }
-
-  .header {
-    &__box {
-      max-width: 690px;
-    }
+    padding: 0 39px;
   }
 
   .main {
     &-img {
-      max-width: 330px;
-      max-height: 380px;
-      width: 100%;
-      height: 100%;
+      width: 50%;
+      height: auto;
       overflow: unset;
     }
     &__content {
       gap: 20px;
-      max-width: 330px;
-      max-height: 380px;
-      width: 100%;
+
+      width: 50%;
       height: 100%;
     }
     &__title {
@@ -576,7 +568,7 @@ a {
 
   .catalog {
     &__info {
-      max-width: 690px;
+      // max-width: 690px;
       width: 100%;
       height: 43px;
     }
@@ -592,18 +584,19 @@ a {
       letter-spacing: 0%;
     }
     &__cards {
-      max-width: 690px;
+      // max-width: 690px;
       width: 100%;
       margin-top: 30px;
     }
     &__card {
+      flex: 1 1 350px;
+      max-width: 48%;
       padding: 20px;
       width: 330px;
       height: 730px;
       justify-content: space-between;
 
       &-img {
-        max-width: 290px;
         width: 100%;
         max-height: 422px;
         height: 100%;
@@ -624,8 +617,7 @@ a {
       ),
       url("/image/Rectangle.jpg") no-repeat center / cover;
     &__info {
-      max-width: 690px;
-      width: 100%;
+      padding-top: 70px;
       max-height: 502px;
     }
     &__title {
@@ -697,7 +689,7 @@ a {
     }
 
     &__contact {
-      max-width: 690px;
+      max-width: 1278px;
       height: 52px;
       width: 100%;
       flex-direction: row;
@@ -711,9 +703,9 @@ a {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 510px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 33px;
   }
 
   .header {
@@ -725,7 +717,7 @@ a {
       justify-content: space-evenly;
     }
     &__nav {
-      max-width: 510px;
+      max-width: 768px;
       width: 100%;
       height: 40px;
       gap: 60px;
@@ -739,28 +731,24 @@ a {
 
   .main {
     margin-top: 50px;
-    display: flex;
-    justify-content: center;
+
     &__box {
-      max-width: 510px;
+      max-width: 706px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       width: 100%;
-      height: 239px;
-      gap: 30px;
     }
-    &_content {
+    &__content {
+      flex: 2;
+      max-width: 285px;
+      width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
     }
     &-img {
-      max-width: 195px;
       width: 100%;
-      max-height: 239px;
-      height: 100%;
-      object-fit: cover;
     }
     &__title {
-      max-width: 510px;
       width: 100%;
 
       font-size: 36px;
@@ -796,12 +784,13 @@ a {
       margin-top: 20px;
     }
     &__card {
-      max-width: 240px;
-      width: 100%;
+      flex: 1 1 240px;
       height: 514px;
       padding: 20px;
+
       &-img {
-        width: 200px;
+        max-width: 100%;
+        width: auto;
         height: 250px;
       }
       &-author {
@@ -826,7 +815,7 @@ a {
 
   .promo {
     &__info {
-      margin-top: 50px;
+      padding-top: 50px;
     }
     &__title {
       max-width: 331px;
@@ -840,10 +829,11 @@ a {
       }
     }
     &__content {
+      height: auto;
       font-size: 16px;
       &-btn {
-        width: 190;
-        height: 50;
+        width: 190px;
+        height: 50px;
         top: 310px;
         left: 33px;
         gap: 6px;
@@ -857,7 +847,7 @@ a {
 
   .team {
     margin-top: 50px;
-    height: 656px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -878,21 +868,19 @@ a {
   }
 
   .footer {
-    height: 319px;
+    padding-top: 20px;
+    height: auto;
 
     &__box {
-      padding: 0;
       display: flex;
       flex-wrap: wrap;
-      height: 250px;
+      height: auto;
       align-items: center;
-      justify-content: space-between;
-
+      justify-content: center;
       gap: 30px;
     }
 
     &__contact {
-      max-width: 510px;
       width: 100%;
       flex-direction: row;
       justify-content: space-between;
@@ -902,12 +890,10 @@ a {
       margin-top: 0;
     }
     &__content {
-      max-width: 510px;
-      width: 100%;
+      max-width: 1278px;
       justify-content: space-between;
     }
     &__social {
-      max-width: 510px;
       width: 100%;
       display: flex;
       flex-direction: column;
