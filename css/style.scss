@@ -1062,11 +1062,8 @@ a {
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
       scrollbar-width: none;
-      margin-left: -15px;
-      margin-right: -15px;
-      padding-left: 15px;
-      padding-right: 15px;
-      width: calc(100% + 30px);
+
+      width: 100%;
 
       &::-webkit-scrollbar {
         display: none;
